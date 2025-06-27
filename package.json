@@ -1,45 +1,43 @@
 {
-  "name": "clara-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "lotr-sdk",
+  "version": "1.0.0",
+  "description": "An sdk for interacting with the lotr api",
+  "main": "./lib/lib.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.23",
-    "@types/react": "^18.0.33",
-    "@types/react-dom": "^18.0.11",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.10.0",
-    "react-scripts": "5.0.1",
-    "tailwind": "^4.0.0",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "async": "^0.2.10",
+    "axios": "^0.25.0",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.3.0",
+    "combined-stream": "^0.0.7",
+    "delayed-stream": "^0.0.5",
+    "expect": "^27.5.1",
+    "faker": "^6.6.6",
+    "follow-redirects": "^1.14.7",
+    "form-data": "^4.0.0",
+    "mime": "^1.2.11",
+    "mocha": "^9.2.0",
+    "name": "^0.0.1",
+    "request": "^2.12.0",
+    "ts-mocha": "^9.0.2",
+    "typescript": "^4.5.5",
+    "version": "^0.0.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "ts-mocha ./tests/index.ts --timeout=20000 --exit"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mocha": "^9.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
   }
 }
